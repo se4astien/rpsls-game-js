@@ -1,7 +1,7 @@
 const choices = document.querySelectorAll('.choice');
 const score = document.getElementById('score');
 const result = document.getElementById('result');
-
+const restart = document.getElementById('restart');
 const modal = document.querySelector('.modal');
 const content = document.getElementById('content');
 
@@ -38,22 +38,34 @@ function getWinner(p, c) {
   if (p === c) {
     return 'draw';
   } else if (p === 'rock') {
-    if (c === 'paper') {
-      return 'computer';
-    } else {
+    if (c === 'scissors' || c === 'lizard') {
       return 'player';
+    } else {
+      return 'computer';
     }
   } else if (p === 'paper') {
-    if (c === 'scissors') {
-      return 'computer';
-    } else {
+    if (c === 'rock' || c === 'spock') {
       return 'player';
+    } else {
+      return 'computer';
     }
   } else if (p === 'scissors') {
-    if (c === 'rock') {
-      return 'computer';
-    } else {
+    if (c === 'paper' || c === 'lizard') {
       return 'player';
+    } else {
+      return 'computer';
+    }
+  } else if (p === 'lizard') {
+    if (c === 'paper' || c === 'spock') {
+      return 'player';
+    } else {
+      return 'computer';
+    }
+  } else if (p === 'spock') {
+    if (c === 'rock' || c === 'scissors') {
+      return 'player';
+    } else {
+      return 'computer';
     }
   }
 }
@@ -64,7 +76,7 @@ function showWinner(winner, playerChoice, computerChoice) {
     scoreboard.player++;
     result.innerHTML = `
     <div>
-        <h3>You picked</h3>
+        <p>You picked</p>
         <span class=${playerChoice}>
             <img src="../images/icon-${playerChoice}.svg" alt=${playerChoice} />
           </span>
@@ -139,5 +151,14 @@ function playAgain(e) {
   }
 }
 
+function restartGame(e) {
+  scoreboard.player = 0;
+  score.innerHTML = `
+    <span>Score</span>
+    <span>0</span>
+  `;
+}
+
 choices.forEach((choice) => choice.addEventListener('click', play));
 result.addEventListener('click', playAgain);
+restart.addEventListener('click', restartGame);

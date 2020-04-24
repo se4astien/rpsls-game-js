@@ -41,6 +41,12 @@
   font-size: 3rem;
 }
 
+.modal-content span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-content span img {
   width: 200px;
   height: 200px;

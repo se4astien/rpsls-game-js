@@ -25,11 +25,10 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  line-height: 1.6;
   background-image: radial-gradient(var(--radial-gradient));
   background-repeat: no-repeat;
-  height: 100vh;
   color: #fff;
+  height: 100vh;
 }
 
 .container {
@@ -42,7 +41,7 @@ body {
   border: 2px solid var(--header-outline);
   border-radius: 10px;
   margin: 2rem 0;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,9 +50,10 @@ body {
 .header h1 {
   width: 10vw;
   text-align: left;
-  line-height: 0.9;
+  line-height: 0.75;
   text-transform: uppercase;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 .header .score {
@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 2;
 }
 
 .header .score > span:first-child {
@@ -81,21 +82,21 @@ body {
 }
 
 .choices {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background: url('../images/bg-triangle.svg') no-repeat center center;
+  height: 400px;
+  background: url('../images/bg-pentagon.svg') no-repeat center 50px;
+  position: relative;
+}
+
+.choices .choice {
+  display: inline-block;
+  position: absolute;
 }
 
 .choices .choice,
 .modal-content span {
   border-radius: 50%;
-  margin: 1rem 3rem 0;
+  margin: 0 3rem;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .choices .choice > img,
@@ -103,36 +104,46 @@ body {
   background-color: #fff;
   padding: 30px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 .choices .choice.rock,
 .modal-content span.rock {
   background-image: linear-gradient(var(--rock-gradient));
+  top: -13px;
+  left: 270px;
 }
 
 .choices .choice.paper,
 .modal-content span.paper {
   background-image: linear-gradient(var(--paper-gradient));
+  top: 110px;
+  right: 130px;
 }
 
 .choices .choice.scissors,
 .modal-content span.scissors {
   background-image: linear-gradient(var(--scissors-gradient));
+  bottom: -50px;
+  right: 180px;
 }
 
 .choices .choice.lizard,
 .modal-content span.lizard {
   background-image: linear-gradient(var(--lizard-gradient));
+  bottom: -50px;
+  left: 180px;
 }
 
 .choices .choice.spock,
 .modal-content span.spock {
   background-image: linear-gradient(var(--spock-gradient));
+  top: 110px;
+  left: 130px;
 }
 
-.rules {
+.restart {
   position: absolute;
   bottom: 30px;
   right: 30px;
