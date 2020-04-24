@@ -1,5 +1,6 @@
 const choices = document.querySelectorAll('.choice');
-const score = document.getElementById('score');
+const playerScore = document.getElementById('player-score');
+const computerScore = document.getElementById('computer-score');
 const result = document.getElementById('result');
 const restart = document.getElementById('restart');
 const modal = document.querySelector('.modal');
@@ -7,6 +8,7 @@ const content = document.getElementById('content');
 
 const scoreboard = {
   player: 0,
+  computer: 0,
 };
 
 // 1. When you click on a picture (rock, paper or scissors)
@@ -93,6 +95,7 @@ function showWinner(winner, playerChoice, computerChoice) {
     </div>
     `;
   } else if (winner === 'computer') {
+    scoreboard.computer++;
     result.innerHTML = `
       <div>
       <p>You picked</p>
@@ -132,10 +135,16 @@ function showWinner(winner, playerChoice, computerChoice) {
       `;
   }
 
-  // Show score
-  score.innerHTML = `
-    <span>Score</span>
+  // Show score player
+  playerScore.innerHTML = `
+    <span>Your Score</span>
     <span>${scoreboard.player}</span>
+  `;
+
+  // Show score computer
+  computerScore.innerHTML = `
+    <span>Score Computer</span>
+    <span>${scoreboard.computer}</span>
   `;
 
   // Show modal
@@ -153,8 +162,13 @@ function playAgain(e) {
 
 function restartGame(e) {
   scoreboard.player = 0;
-  score.innerHTML = `
-    <span>Score</span>
+  scoreboard.computer = 0;
+  playerScore.innerHTML = `
+    <span>Your Score</span>
+    <span>0</span>
+  `;
+  computerScore.innerHTML = `
+    <span>Computer Score</span>
     <span>0</span>
   `;
 }
