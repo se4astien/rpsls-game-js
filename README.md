@@ -10,10 +10,10 @@ Rock Paper Scissors Lizard Spock Game in Vanilla JS
 ## Online
 https://rock-paper-scissors-lizard-spock-game-js.netlify.app/
 
-## Screenshot
+## Screenshots
 
-<ul>
-<li><img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" /></li>
-<li><img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" /></li>
-<li><img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" /></li>
-</ul>
+<div style="display:flex; justify-content:center">
+<img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" />
+<img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" />
+<img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" />
+</div>
