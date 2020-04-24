@@ -5,7 +5,6 @@ const result = document.getElementById('result');
 const restart = document.getElementById('restart');
 const modal = document.querySelector('.modal');
 const content = document.getElementById('content');
-
 const scoreboard = {
   player: 0,
   computer: 0,

@@ -112,36 +112,51 @@ body {
   height: 120px;
 }
 
+.choices .choice.rock {
+  align-self: flex-end;
+  margin-top: 80px;
+}
+
+.choices .choice.paper {
+  align-self: flex-start;
+}
+
+.choices .choice.scissors {
+  align-self: flex-end;
+}
+
+.choices .choice.lizard {
+  align-self: flex-end;
+  margin-right: 40px;
+}
+
+.choices .choice.spock {
+  align-self: flex-end;
+}
+
 .choices .choice.rock,
 .modal-content span.rock {
   background-image: linear-gradient(var(--rock-gradient));
-  align-self: flex-end;
-  margin-top: 80px;
 }
 
 .choices .choice.paper,
 .modal-content span.paper {
   background-image: linear-gradient(var(--paper-gradient));
-  align-self: flex-start;
 }
 
 .choices .choice.scissors,
 .modal-content span.scissors {
   background-image: linear-gradient(var(--scissors-gradient));
-  align-self: flex-end;
 }
 
 .choices .choice.lizard,
 .modal-content span.lizard {
   background-image: linear-gradient(var(--lizard-gradient));
-  align-self: flex-end;
-  margin-right: 40px;
 }
 
 .choices .choice.spock,
 .modal-content span.spock {
   background-image: linear-gradient(var(--spock-gradient));
-  align-self: flex-end;
 }
 
 .restart {
