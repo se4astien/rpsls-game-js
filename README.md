@@ -4,7 +4,8 @@
 
 ## Project Specifications
 * [x] Play Rock, Paper, Scissors, Lizard, Spock against the computer
-* [x] View the optimal layout for the game depending on their device's screen size
+* [x] View the optimal layout for the game depending on their device's screen size (desktop and tablet)
+* [x] Refresh the score by clicking 'restart' button
 * [x] Maintain the state of the score after refreshing the browser
 
 ## Online
