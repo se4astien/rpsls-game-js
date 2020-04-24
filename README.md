@@ -3,10 +3,9 @@
 Rock Paper Scissors Lizard Spock Game in Vanilla JS
 
 ## Project Specifications
-View the optimal layout for the game depending on their device's screen size
-Play Rock, Paper, Scissors against the computer
-Maintain the state of the score after refreshing the browser (optional)
-Bonus: Play Rock, Paper, Scissors, Lizard, Spock against the computer (optional)
+[x] Play Rock, Paper, Scissors, Lizard, Spock against the computer
+[x] View the optimal layout for the game depending on their device's screen size
+[x] Maintain the state of the score after refreshing the browser
 
 ## Online
 https://rock-paper-scissors-lizard-spock-game-js.netlify.app/
