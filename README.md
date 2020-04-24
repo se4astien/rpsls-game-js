@@ -14,6 +14,6 @@ https://rock-paper-scissors-lizard-spock-game-js.netlify.app/
 
 <div style="display:flex; justify-content:center">
 <img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" />
-<img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" />
-<img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-01.png" alt="rpsls-game-01" width="33%" />
+<img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-02.png" alt="rpsls-game-02" width="33%" />
+<img src="https://github.com/se4astien/rpsls-game-js/blob/master/screenshots/rpsls-game-03.png" alt="rpsls-game-03" width="33%" />
 </div>
