@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <title>Rock Paper Scissors Lizard Spock Game JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <div id="score" class="score">
+          <span>Score</span>
+          <span>0</span>
+        </div>
+      </header>
+      <div id="content">
+        <div class="choices">
+          <span class="choice rock">
+            <img id="rock" src="./images/icon-rock.svg" alt="rock" />
+          </span>
+          <span class="choice paper">
+            <img id="paper" src="./images/icon-paper.svg" alt="paper" />
+          </span>
+          <span class="choice scissors">
+            <img
+              id="scissors"
+              src="./images/icon-scissors.svg"
+              alt="scissors"
+            />
+          </span>
+          <!-- <span class="choice lizard">
+          <img id="lizard" src="./images/icon-lizard.svg" alt="lizard" />
+        </span>
+        <span class="choice spock">
+          <img id="spock" src="./images/icon-spock.svg" alt="spock" />
+        </span> -->
+        </div>
+        <button class="rules">Rules</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div id="result" class="modal-content"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

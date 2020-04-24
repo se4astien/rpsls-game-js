@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+:root {
+  /* ### Primary */
+  --scissors-gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --paper-gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+  --rock-gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+  --lizard-gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+  --spock-gradient: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
+
+  /* ### Neutral */
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+
+  /* ### Background */
+  --radial-gradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.6;
+  background-image: radial-gradient(var(--radial-gradient));
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  /* display: none; */
+}
+
+.header {
+  border: 2px solid var(--header-outline);
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  width: 10vw;
+  text-align: left;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header .score {
+  background: white;
+  margin: 0.75rem 0;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .score > span:first-child {
+  color: var(--score-text);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+}
+
+.header .score > span:last-child {
+  color: var(--dark-text);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: url('../images/bg-triangle.svg') no-repeat center center;
+}
+
+.choices .choice,
+.modal-content span {
+  border-radius: 50%;
+  margin: 1rem 3rem 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices .choice > img,
+.modal-content span img {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.choices .choice.rock,
+.modal-content span.rock {
+  background-image: linear-gradient(var(--rock-gradient));
+}
+
+.choices .choice.paper,
+.modal-content span.paper {
+  background-image: linear-gradient(var(--paper-gradient));
+}
+
+.choices .choice.scissors,
+.modal-content span.scissors {
+  background-image: linear-gradient(var(--scissors-gradient));
+}
+
+.choices .choice.lizard,
+.modal-content span.lizard {
+  background-image: linear-gradient(var(--lizard-gradient));
+}
+
+.choices .choice.spock,
+.modal-content span.spock {
+  background-image: linear-gradient(var(--spock-gradient));
+}
+
+.rules {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 7px;
+  background: transparent;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  outline: none;
+}

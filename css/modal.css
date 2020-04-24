@@ -1,0 +1,66 @@
+:root {
+  /* duration */
+  --modal-duration: 1s;
+  --win-color: #28a745;
+  --lose-color: #dc3545;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 62vh;
+  overflow: auto;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-content > div {
+  text-align: center;
+}
+
+.modal-content > div > p {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.modal-content h2 {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.modal-content span img {
+  width: 200px;
+  height: 200px;
+}
+
+.modal-content .again-btn {
+  background: #fff;
+  color: var(--dark-text);
+  padding: 10px 20px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.text-win {
+  color: var(--win-color);
+}
+
+.text-lose {
+  color: var(--lose-color);
+}
