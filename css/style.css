@@ -82,21 +82,25 @@ body {
 }
 
 .choices {
+  width: 70%;
   height: 400px;
+  margin: 0 auto;
   background: url('../images/bg-pentagon.svg') no-repeat center 50px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .choices .choice {
-  display: inline-block;
-  position: absolute;
+  width: 150px;
+  height: 150px;
 }
 
 .choices .choice,
 .modal-content span {
   border-radius: 50%;
-  margin: 0 3rem;
-  padding: 20px;
+  padding: 15px;
 }
 
 .choices .choice > img,
@@ -111,36 +115,33 @@ body {
 .choices .choice.rock,
 .modal-content span.rock {
   background-image: linear-gradient(var(--rock-gradient));
-  top: -13px;
-  left: 270px;
+  align-self: flex-end;
+  margin-top: 80px;
 }
 
 .choices .choice.paper,
 .modal-content span.paper {
   background-image: linear-gradient(var(--paper-gradient));
-  top: 110px;
-  right: 130px;
+  align-self: flex-start;
 }
 
 .choices .choice.scissors,
 .modal-content span.scissors {
   background-image: linear-gradient(var(--scissors-gradient));
-  bottom: -50px;
-  right: 180px;
+  align-self: flex-end;
 }
 
 .choices .choice.lizard,
 .modal-content span.lizard {
   background-image: linear-gradient(var(--lizard-gradient));
-  bottom: -50px;
-  left: 180px;
+  align-self: flex-end;
+  margin-right: 40px;
 }
 
 .choices .choice.spock,
 .modal-content span.spock {
   background-image: linear-gradient(var(--spock-gradient));
-  top: 110px;
-  left: 130px;
+  align-self: flex-end;
 }
 
 .restart {
