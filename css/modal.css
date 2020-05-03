@@ -42,10 +42,65 @@
 }
 
 .modal-content span {
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.modal-content span {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 3rem;
+  position: relative;
+}
+
+.modal-content .rock,
+.modal-content .paper,
+.modal-content .scissors,
+.modal-content .lizard,
+.modal-content .spock {
+  top: 0;
+  left: 0;
+}
+
+.modal-content .win span:before {
+  content: '';
+  background-color: #ffffff21;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(0, 0);
+  animation: animateWaves 1.5s infinite 0.5s;
+}
+
+.modal-content .win span:after {
+  content: '';
+  background-color: #ffffff21;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(0, 0);
+  animation: animateWaves 1.5s infinite 0.1s;
+}
+
+@keyframes animateWaves {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(0);
+  }
 }
 
 .modal-content span img {

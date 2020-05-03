@@ -76,7 +76,7 @@ function showWinner(winner, playerChoice, computerChoice) {
   if (winner === 'player') {
     scoreboard.player++;
     result.innerHTML = `
-    <div>
+    <div class="win">
         <p>You picked</p>
         <span class=${playerChoice}>
             <img src="../images/icon-${playerChoice}.svg" alt=${playerChoice} />
@@ -106,7 +106,7 @@ function showWinner(winner, playerChoice, computerChoice) {
       <h2 class="text-lose">You lose</h2>
       <button id="again" class="again-btn">Play Again</button>
     </div>
-    <div>
+    <div class="win">
       <p>The house picked</p>
       <span class=${computerChoice}>
         <img src="./images/icon-${computerChoice}.svg" alt=${computerChoice} />
