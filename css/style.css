@@ -95,6 +95,7 @@ body {
 .choices .choice {
   width: 150px;
   height: 150px;
+  cursor: pointer;
 }
 
 .choices .choice,
@@ -110,6 +111,8 @@ body {
   border-radius: 50%;
   width: 120px;
   height: 120px;
+  box-shadow: 0 1vmin #bbbfd3 inset;
+  -webkit-box-shadow: 0 1vmin #bbbfd3 inset;
 }
 
 .choices .choice.rock {
@@ -136,27 +139,37 @@ body {
 
 .choices .choice.rock,
 .modal-content span.rock {
-  background-image: linear-gradient(var(--rock-gradient));
+  background-image: radial-gradient(var(--rock-gradient));
+  box-shadow: 0 1vmin #dc2e4e;
+  -webkit-box-shadow: 0 1vmin #dc2e4e;
 }
 
 .choices .choice.paper,
 .modal-content span.paper {
-  background-image: linear-gradient(var(--paper-gradient));
+  background-image: radial-gradient(var(--paper-gradient));
+  box-shadow: 0 1vmin #2745be;
+  -webkit-box-shadow: 0 1vmin #2745be;
 }
 
 .choices .choice.scissors,
 .modal-content span.scissors {
-  background-image: linear-gradient(var(--scissors-gradient));
+  background-image: radial-gradient(var(--scissors-gradient));
+  box-shadow: 0 1vmin #c46b1c;
+  -webkit-box-shadow: 0 1vmin #c46b1c;
 }
 
 .choices .choice.lizard,
 .modal-content span.lizard {
-  background-image: linear-gradient(var(--lizard-gradient));
+  background-image: radial-gradient(var(--lizard-gradient));
+  box-shadow: 0 1vmin #5f37a9;
+  -webkit-box-shadow: 0 1vmin #5f37a9;
 }
 
 .choices .choice.spock,
 .modal-content span.spock {
-  background-image: linear-gradient(var(--spock-gradient));
+  background-image: radial-gradient(var(--spock-gradient));
+  box-shadow: 0 1vmin #2b8dab;
+  -webkit-box-shadow: 0 1vmin #2b8dab;
 }
 
 .restart {
